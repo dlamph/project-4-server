@@ -1,3 +1,4 @@
 {
-  "python.pythonPath": "/Users/Drew/.local/share/virtualenvs/server-dTocdQHU/bin/python"
+  "python.pythonPath": "/Users/Drew/.local/share/virtualenvs/server-dTocdQHU/bin/python",
+  "python.linting.pylintEnabled": true
 }
