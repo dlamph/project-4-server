@@ -3,4 +3,32 @@ GET http://localhost:8000/api/instruments/
 ###
 
 # Get single Instruments 
-GET http://localhost:8000/api/instruments/4
+GET http://localhost:8000/api/instruments/5
+
+###
+# Register a User
+
+POST http://localhost:8000/api/auth/register/
+Content-Type: application/json
+
+{
+  "password":"Drew123456789",
+  "passwordConfirmation": "Drew123456789",
+  "username": "Drew",
+  "email": "Drew@email.com",
+  "firstName": "Drew",
+  "lastName":"Lamph",
+  "bio": " Hello World",
+  "userType":"Student" 
+}
+
+###
+
+# Login a User
+POST http://localhost:8000/api/auth/login/
+Content-Type: application/json
+
+{
+  "email": "Drew@email.com",
+  "password": "Drew123456789"
+}

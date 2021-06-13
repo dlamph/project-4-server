@@ -20,3 +20,4 @@ class User(AbstractUser):
     )
     location = models.CharField(max_length=50, blank=True)
 
+    
