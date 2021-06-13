@@ -1,0 +1,6 @@
+# Get all Instruments 
+GET http://localhost:8000/api/instruments/
+###
+
+# Get single Instruments 
+GET http://localhost:8000/api/instruments/5
