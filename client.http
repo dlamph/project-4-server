@@ -1,7 +1,11 @@
+
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDIwMzUxMn0.dandJgF9QMr8_OyJAVRmpr2F4UZq501IEb7u4lCvW60
 # Get all Instruments 
 GET http://localhost:8000/api/instruments/
-###
+Content-Type: application/json
+Authorization: Bearer {{token}}
 
+###
 # Get single Instruments 
 GET http://localhost:8000/api/instruments/5
 
