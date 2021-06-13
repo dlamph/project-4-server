@@ -1,0 +1,90 @@
+[
+{
+  "model": "instruments.instrument",
+  "pk": 1,
+  "fields": {
+    "name": "Cornet",
+    "description": "The cornet is similar to the trumpet but is usually played in bands and only occasionally in orchestras. It differs from the trumpet in that it is more compact and has a wider bore (tube). To produce a sound, the cornet player places the lips to the mouthpiece, presses them together firmly, and blows air through the middle to make them vibrate or “buzz”. By altering the pressure of the lips, the cornet player can change the pitch produced. Cornets often take the lead melody in traditional brass bands, military bands, and are sometimes used in jazz bands",
+    "instrument_family": "Brass",
+    "image": "https://i2.wp.com/freepngimages.com/wp-content/uploads/2015/11/brass-silver-trumpet-transparent-background.png?fit=590%2C326",
+    "media": "https://www.youtube.com/watch?v=faWtz1VJG8U"
+  }
+},
+{
+  "model": "instruments.instrument",
+  "pk": 2,
+  "fields": {
+    "name": "French horn",
+    "description": "The French horn is an intricately coiled metal tube with a large flared bell at one end and a mouthpiece at the other. The basic tubing of the modern French horn is 3.7–4m (12–13ft) long, though there is extra tubing for the valves. The horn player blows into the mouthpiece while buzzing the lips together to sound a note. Different pitches can be produced by altering the pressure of the lips and by pressing down the valves. The horn is an important instrument in the orchestral brass section, with a lower range than trumpets and trombones, but higher than the tuba.",
+    "instrument_family": "Brass",
+    "image": "https://www.pngitem.com/pimgs/m/114-1148165_saxhorn-french-horns-mellophone-cornet-french-horn-png.png",
+    "media": "https://www.youtube.com/watch?v=u7sTTv_A3IQ"
+  }
+},
+{
+  "model": "instruments.instrument",
+  "pk": 3,
+  "fields": {
+    "name": "Trombone",
+    "description": "Like all brass instruments, the trombone is a long, bent metal tube. While trumpets and cornets have valves to help produce different notes, the trombone has a slide mechanism. By pushing the slide out the tube is lengthened (making the note lower), and by pulling it back in the tube is shortened (making the note higher). The trombone is a versatile instrument, being played in orchestras, marching bands, and jazz bands.",
+    "instrument_family": "Brass",
+    "image": "https://www.pngitem.com/pimgs/m/150-1502980_grab-and-download-trombone-png-image-without-background.png",
+    "media": "https://www.youtube.com/watch?v=ZxODzxY6AvI"
+  }
+},
+{
+  "model": "instruments.instrument",
+  "pk": 4,
+  "fields": {
+    "name": "Trumpet",
+    "description": "The trumpet is the oldest of all brass instruments and is thought to be more than 3,500 years old, although the early ones didn’t have piston valves, which were added around 1820. To play the trumpet, players hold their lips taut and vibrate or “buzz” them together as they blow into the mouthpiece. The air vibrates down the trumpet (which is really a bent tube of metal) and comes out of the bell. The trumpet plays the highest notes in the orchestral brass section and is also very popular in jazz bands or as a solo instrument.",
+    "instrument_family": "Brass",
+    "image": "https://cdn.jpmusicalinstruments.com/uploads/prod_card_img/2_34_cb.png?v=1516639304",
+    "media": "https://www.youtube.com/watch?v=AFsObmomVFA"
+  }
+},
+{
+  "model": "instruments.instrument",
+  "pk": 5,
+  "fields": {
+    "name": "Tuba",
+    "description": "The tuba is the largest and deepest-sounding instrument in a regular orchestral brass section. Unlike the trumpet and trombone, the tuba is held upright when it is played. As with all brass instruments, the tuba player sounds a note by putting the mouthpiece to the lips, pressing them together, and blowing air through the middle to vibrate or “buzz” them. The tuba has valves, which produce different notes when pressed. It provides the bass notes for the brass section in an orchestra and is also played in brass bands and jazz music.",
+    "instrument_family": "Brass",
+    "image": "https://cdn.jpmusicalinstruments.com/uploads/prod_img/2_72_l.png?v=-62169984000",
+    "media": "https://www.youtube.com/watch?v=Mwu0RlRUjfQ"
+  }
+},
+{
+  "model": "instruments.instrument",
+  "pk": 6,
+  "fields": {
+    "name": "Harpsichord",
+    "description": "The harpsichord was a popular solo and accompanying instrument in Europe in the 16th and 17th centuries (the Baroque period), after which the piano took its place. The strings of a harpsichord are plucked, unlike piano strings that are hit with small hammers. When a key is pressed down a small piece of quill or plastic (the plectrum) plucks a string to sound the note. The note is then “damped” or stopped by a piece of cloth or felt when the key is released. Unlike the piano, the notes of a harpsichord are sounded at the same volume however lightly or heavily a key is pressed.",
+    "instrument_family": "Keyboards",
+    "image": "https://cdn.imgbin.com/1/8/4/imgbin-harpsichord-musical-instruments-musical-instruments-8g3VjYpYtp1Ya13kfHekUQXRU.jpg",
+    "media": "https://www.youtube.com/watch?v=EilFbfx1QRc"
+  }
+},
+{
+  "model": "instruments.instrument",
+  "pk": 7,
+  "fields": {
+    "name": "Organ",
+    "description": "The organ is the earliest keyboard instrument. Used in churches for centuries, it is now played as a concert instrument in both classical and popular music. It works in a similar way to woodwind and brass instruments. Air is blown through a hollow pipe by a set of bellows to produce sound. There are three main parts of an organ: the pipes, the bellows, and the controls. The pipes differ in size and shape to make different sounds. The keyboard controls different rows of pipes and each pipe produces a different note.",
+    "instrument_family": "Keyboards",
+    "image": "https://img.pngio.com/home-schmidt-piano-organ-245756-png-images-pngio-organ-png-1485_1648.png",
+    "media": "https://www.youtube.com/watch?v=a9mgZqO4bgc"
+  }
+},
+{
+  "model": "instruments.instrument",
+  "pk": 8,
+  "fields": {
+    "name": "Piano",
+    "description": "The piano has the widest range of notes of any instrument, covering more than seven octaves. The word “piano” is short for pianoforte, meaning that the instrument can be played softer (what a musician would call&nbsp;\"piano\") or&nbsp;louder (known as \"forte\")&nbsp;in response to the player’s touch on the keyboard. When a key is pressed on the keyboard, it moves a felt-covered hammer that strikes a steel string, making it vibrate to produce a sound. The piano is a versatile instrument and is played in all types of music, including classical, popular, and jazz.",
+    "instrument_family": "Keyboards",
+    "image": "data:image/webp;base64,UklGRkgKAABXRUJQVlA4IDwKAABwTQCdASr6AMkAPtFiq1CoJSOipNCKqQAaCWlu/CX4Mbxpq8X8t7vRfzK/Tfz/9j/5J3+C8o3z3k7KGd/v5rwU7N3+H3x/NzUC9k70zsXmO99/Sh+b83/5n/E68d5v7BH6U9Z3/c82n7R/veCl+0Fbwr7kUBLfisHOPskhw96OuWRt0hIcpUD6ADaJkv5Ak5Zyq80cxlR",
+    "media": "https://www.youtube.com/watch?v=LSwXh1Y5thY"
+  }
+}
+]

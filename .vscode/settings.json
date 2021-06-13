@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
   "python.pythonPath": "/usr/bin/python",
+=======
+  "python.pythonPath": "/Users/dconev88/.local/share/virtualenvs/server-D7o0uBLd/bin/python",
+>>>>>>> Dimitar-Server
   "python.linting.pylintEnabled": true
 }
