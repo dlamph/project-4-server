@@ -17,7 +17,7 @@ class InstrumentListView(APIView):
 class InstrumentDetailView(APIView):
 
     def get(self, _request,pk):
-        try: 
+        try:
             instrument = Instrument.objects.get(pk=pk)
             serlialized_instrument = InstrumentSerializer(instrument)
             return Response(serlialized_instrument.data, status=status.HTTP_200_OK)
