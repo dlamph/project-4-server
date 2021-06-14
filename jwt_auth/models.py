@@ -1,6 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+# class User(AbstractUser):
+#     is_student = models.BooleanField('student status', default=False)
+#     is_teacher = models.BooleanField('teacher status', default=False)
+
+
 class User(AbstractUser):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
@@ -18,6 +23,83 @@ class User(AbstractUser):
         max_length=10,
         choices=USER_TYPE_CHOICES,
     )
-    location = models.CharField(max_length=50, blank=True)
-
-    
+    PIANO='Piano'
+    DRUMS ='Drums'
+    TIMPANI ='Timpani'
+    XYLOPHONE ='Xylophone'
+    CORNET = 'Cornet'
+    TUBA ='Tuba'
+    TROMBONE ='Trombone'
+    FRENCH_HORN ='French Horn'
+    TRUMPET ='Trumpet'
+    SAXOPHONE ='Saxophone'
+    BASSOON ='Bassoon'
+    CLARINET ='Clarinet'
+    OBOE ='Oboe'
+    FLUTE ='Flute'
+    GUITAR ='Guitar'
+    HARP ='Harp'
+    DOUBLE_BASS ='Double Bass'
+    CELLO ='Cello'
+    VIOLA ='Viola'
+    VIOLIN ='Violin'
+    INSTRUMENT_TYPE_CHOICES = [
+      (PIANO, 'Piano'),
+      (DRUMS, 'Drums'),
+      (TIMPANI, 'Timpani'),
+      (XYLOPHONE, 'Xylophone'),
+      (CORNET,  'Cornet'),
+      (TUBA, 'Tuba'),
+      (TROMBONE, 'Trombone'),
+      (FRENCH_HORN, 'French Horn'),
+      (TRUMPET, 'Trumpet'),
+      (SAXOPHONE, 'Saxophone'),
+      (BASSOON, 'Bassoon'),
+      (CLARINET, 'Clarinet'),
+      (OBOE, 'Oboe'),
+      (FLUTE, 'Flute'),
+      (GUITAR, 'Guitar'),
+      (HARP, 'Harp'),
+      (DOUBLE_BASS, 'Double Bass'),
+      (CELLO, 'Cello'),
+      (VIOLA, 'Viola'),
+      (VIOLIN, 'Violin'),
+    ]
+    instrument_type = models.CharField(
+        max_length=15,
+        choices=INSTRUMENT_TYPE_CHOICES,
+    )
+    LONDON = 'London'
+    MANCHESTER= 'Manchester'
+    BIRMINGHAM = 'Birmingham'
+    LIVERPOOL = 'Liverpool'
+    LEEDS = 'Leeds'
+    NEWCASTLE = 'Newcastle'
+    EDINBURGH = 'Edinburgh'
+    GLASGOW = 'Glasgow'
+    CAMBRIDGE = 'Cambridge'
+    BRISTOL = 'Bristol'
+    CARDIFF = 'Cardiff'
+    BELFAST = 'Belfast'
+    YORK = 'York'
+    SHEFFIELD = 'Sheffield'
+    LOCATION_TYPE_CHOICES = [
+      (LONDON, 'London'),
+      (MANCHESTER, 'Manchester'),
+      (BIRMINGHAM, 'Birmingham'),
+      (LIVERPOOL, 'Liverpool'),
+      (LEEDS, 'Leeds'),
+      (NEWCASTLE, 'Newcastle'),
+      (EDINBURGH, 'Edinburgh'),
+      (GLASGOW, 'Glasgow'),
+      (CAMBRIDGE, 'Cambridge'),
+      (BRISTOL, 'Bristol'),
+      (CARDIFF, 'Cardiff'),
+      (BELFAST, 'Belfast'),
+      (YORK, 'York'),
+      (SHEFFIELD, 'Sheffield')
+    ]
+    location_type_choices = models.CharField(
+      max_length=15,
+      choices=LOCATION_TYPE_CHOICES
+    )
