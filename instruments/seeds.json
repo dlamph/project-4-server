@@ -1,222 +1,222 @@
 [
-{
-  "model": "instruments.instrument",
-  "pk": 1,
-  "fields": {
-    "name": "Violin",
-    "description": "The violin is the smallest and highest-pitched of the instruments in the string family. It is related to a North African instrument called a rebab (a three-stringed instrument also played with a bow drawn across the strings). Violins have been traditionally used as an accompaniment to singing and dancing. It is also an important classical solo instrument, as well as taking pride of place at the front of orchestras. When played, the violin is held under the chin and the fingers of the left hand press the strings on the neck of the instrument to produce different pitches when the string is bowed or plucked. The bow is held in the right hand and it is drawn across the strings at right angles to make them sound.",
-    "instrument_family": "Strings",
-    "image": "'image.png.'",
-    "media": "'url'"
+  {
+    "model": "instruments.instrument",
+    "pk": 1,
+    "fields": {
+      "name": "Violin",
+      "description": "The violin is the smallest and highest-pitched of the instruments in the string family. It is related to a North African instrument called a rebab (a three-stringed instrument also played with a bow drawn across the strings). Violins have been traditionally used as an accompaniment to singing and dancing. It is also an important classical solo instrument, as well as taking pride of place at the front of orchestras. When played, the violin is held under the chin and the fingers of the left hand press the strings on the neck of the instrument to produce different pitches when the string is bowed or plucked. The bow is held in the right hand and it is drawn across the strings at right angles to make them sound.",
+      "instrument_family": "Strings",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 2,
+    "fields": {
+      "name": "Viola",
+      "description": "The viola is similar to the violin and is played in the same way. The violist tucks the instrument under the chin and uses a bow or the fingers to sound the strings. The viola has four strings but is larger and produces a deeper sound than the violin. As well as being an important part of the orchestral string section, the viola is a popular solo instrument in chamber music.",
+      "instrument_family": "Strings",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 3,
+    "fields": {
+      "name": "Cello",
+      "description": "Like the violin and viola, the cello has a hollow wooden body with two sound holes, and four strings running along the body and neck. However, it is much larger and cellists usually play the instrument seated with the body of the cello placed between the legs. Modern cellos usually have an endpin, a spike that supports the instrument on the floor. In the Baroque era (1600–1750), the cello was used largely to accompany other instruments. Later, in works by composers such as Beethoven and Brahms, the cello became an expressive solo instrument in its own right.",
+      "instrument_family": "Strings",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 4,
+    "fields": {
+      "name": "Double Bass",
+      "description": "The largest member of the violin family, the double bass produces the lowest notes of the orchestra’s string section. Like the cello, it is played upright but the bassist usually stands or perches on a high stool. It can be played with a bow but in some types of music, such as jazz and swing, the strings are usually plucked with the fingers.",
+      "instrument_family": "Strings",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 5,
+    "fields": {
+      "name": "Harp",
+      "description": "From folk music to classical concertos, the harp is played in many different forms and musical styles. The basic structure of the harp is a set of strings stretched over a frame. The harpist plucks or strums the strings to produce the notes. Harps vary from large, ornate orchestral models with pedals, to small portable varieties. In an orchestra, a single harp is used in the string section and can be played as a solo instrument. In Irish folk music, the harp is an iconic instrument often used to accompany songs and is the national symbol of Ireland.",
+      "instrument_family": "Strings",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 6,
+    "fields": {
+      "name": "Guitar",
+      "description": "The guitar is one of the most widely played instruments in the world. It is incredibly versatile and is used in many different genres of music. From Spanish flamenco and accompanying folksongs to taking the spotlight as a solo instrument in classical works, the story of the acoustic guitar mirrors that of Western music. The guitar consists of a hollow wooden body with six strings stretched over it and along a narrow neck. Guitars usually have a single, round sound hole in the body. The strings can be strummed with the fingers or plucked. Some guitarists use a plectrum (triangular piece of plastic) to sound the strings.",
+      "instrument_family": "Strings",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 7,
+    "fields": {
+      "name": "Flute",
+      "description": "The modern metal flute has its roots in the simple instruments made of bone, wood, or clay that were played by our ancestors thousands of years ago. Now a finely honed metal instrument, the flute’s smooth, bright sound can be heard at the top of the woodwind section. In the 19th century, instrument makers began experimenting with key systems in the search for a more powerful flute, with more reliable tuning. A flute-maker called Theobald Boehm invented a system that is still used on most modern flutes today. The modern flute has just over three octaves and is usually pitched in C. There are larger, lower-pitched flutes (alto) and smaller, high-pitched ones (the piccolo). Standard C-pitched instruments are formed of three sections (joints) that fit together: the head, body, and foot. Flutes are widely played in classical music, as well as jazz and traditional Celtic music, for which softer-toned wooden instruments are preferred.",
+      "instrument_family": "Woodwind",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 8,
+    "fields": {
+      "name": "Oboe",
+      "description": "The oboe is a double-reed woodwind instrument. It is a long wooden tube that flares out at the end. To produce a sound, the oboist places the tip of the reed (made from a bamboo-like cane) between the lips and blows through the tiny hole. Many oboists make their own reeds, as each player needs a slightly different form. The oboe has a range a little lower than that of the flute. It is a key part of the orchestral woodwind section and is also a solo instrument in its own right.",
+      "instrument_family": "Woodwind",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 9,
+    "fields": {
+      "name": "Clarinet",
+      "description": "The clarinet is a versatile woodwind instrument. Its warm tone and expressive capabilities are suited to a variety of musical styles, including classical and jazz. The large clarinet family ranges from the contrabass, which plays the lowest range of notes, to the piccolo clarinet, which plays the highest. Like the saxophone, the clarinet is a single reed instrument. Players blow into the narrow gap between the reed and mouthpiece causing the reed to vibrate and produce a sound. The modern clarinet uses a system of rings and keys, to allow the clarinettist to play a wide range of notes. There are four main sections that make up the clarinet (from top to bottom): the barrel, upper joint, lower joint, and bell. The standard clarinet is in B flat and is used in most styles of music. Clarinets are also made in A, which are more often used in orchestras and chamber music.",
+      "instrument_family": "Woodwind",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 10,
+    "fields": {
+      "name": "Bassoon",
+      "description": "The largest instrument of the woodwind family with the lowest pitch, the bassoon uses a double reed, made from two pieces of cane tied together. The bassoon is played in a similar way to the oboe. The bassoonist presses the reed between the lips and blows to sound the instrument. The reed is connected to the body of the instrument by a curved metal tube, called a crook. There are four sections, or joints, of a bassoon that fit together (from top to bottom): the bell, bass, wing, and butt. A complex system of keys is controlled by the player’s hands to produce different notes.",
+      "instrument_family": "Woodwind",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 11,
+    "fields": {
+      "name": "Saxophone",
+      "description": "Originally invented more than 150 years ago in Paris for use in military bands and orchestras, this impressive woodwind instrument, usually made of brass and more popularly known as the sax, was never really taken up by composers as an orchestral instrument. Instead, it was embraced wholeheartedly by jazz and swing bands, becoming popular as a solo instrument, and today, plays a part in most styles of music. Adolphe Sax invented 14 different saxophones that were divided into seven types (from smallest to largest): sopranino, soprano, alto, tenor, baritone, bass, and contrabass. They all have the keys in the same place, so once you can play one, you should be able to play them all!",
+      "instrument_family": "Woodwind",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 12,
+    "fields": {
+      "name": "Trumpet",
+      "description": "The ancestors of the modern trumpet have been a part of human culture for a very long time. Old trumpet-like instruments played by ancient peoples were made of conch-shell, animal horn, wood or metal. Throughout history the trumpet has been used to sound alarms, gather people together, as a call to war, and to add luster to parade music. Like the violin, the trumpet is the smallest member of its family and plays the highest pitches with its bright and vibrant sound. Today's modern trumpet is a slender brass pipe with three attached valves, which is curved and bent into long loops. If you stretched out the trumpet to its full length, it would be 6 ½ feet long! There are 2 to 4 trumpets in an orchestra and they play both melody and harmony and also support the rhythm. You play the trumpet by holding it horizontally, buzzing your lips into the mouthpiece, and pressing down the three valves in various combinations to change pitch.",
+      "instrument_family": "Brass",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 13,
+    "fields": {
+      "name": "French Horn",
+      "description": "Unlike the English horn, which is neither English nor a horn, the French horn does originally come from France and is unquestionably a horn. It comes from the French hunting horn of the 1600s, and produces a wide variety of sound ranging from very loud to very soft, and from harsh and blaring to mellow and smooth. The French horn's 18 feet of tubing is rolled up into a circular shape, with a large bell at its end. There are anywhere from 2 to 8 French horns in an orchestra, and they play both melody and harmony as well as rhythm. To play the French horn, hold it with the bell curving downward and buzz into the mouthpiece. Your left hand plays the three valves and you can change the type of sound you make by the way you place your right hand in the bell.",
+      "instrument_family": "Brass",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 14,
+    "fields": {
+      "name": "Trombone",
+      "description": "The trombone is the only instrument in the brass family that uses a slide instead of valves to change pitch. A standard trombone is made of long thin brass pipes. Two U-shaped pipes are linked at opposite ends to form an \"S.\" One pipe slides into the other so the total length of the pipe can be extended or shortened. You play the trombone by holding it horizontally, buzzing into the mouthpiece, and using your right hand to change pitch by pushing or pulling the slide to one of seven different positions. If you stretch the trombone out straight, it is about 9 feet long. There are usually 3 trombones in the orchestra and they play pitches in the same range as the cello and bassoon. The three trombones often play harmonies together.",
+      "instrument_family": "Brass",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 15,
+    "fields": {
+      "name": "Tuba",
+      "description": "This is the grandfather of the brass family. The tuba is the largest and lowest brass instrument and anchors the harmony not only of the brass family but the whole orchestra with its deep rich sound. Like the other brasses, the tuba is a long metal tube, curved into an oblong shape, with a huge bell at the end. Tubas range in size from 9 to 18 feet; the longer they are, the lower they sound. Standard tubas have about 16 feet of tubing. There is generally only one tuba in an orchestra and it usually plays harmony. You play the tuba sitting down with the instrument on your lap and the bell facing up. You blow and buzz into a very large mouthpiece and use your hand to press down on the valves which changes the sound. It takes a lot of breath to make sound with the tuba!",
+      "instrument_family": "Brass",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 16,
+    "fields": {
+      "name": "Cornet",
+      "description": "The cornet is similar to the trumpet but is usually played in bands and only occasionally in orchestras. It differs from the trumpet in that it is more compact and has a wider bore (tube). To produce a sound, the cornet player places the lips to the mouthpiece, presses them together firmly, and blows air through the middle to make them vibrate or “buzz”. By altering the pressure of the lips, the cornet player can change the pitch produced. Cornets often take the lead melody in traditional brass bands, military bands, and are sometimes used in jazz bands.",
+      "instrument_family": "Brass",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 17,
+    "fields": {
+      "name": "Xylophone",
+      "description": "The xylophone is a percussion instrument that can play melodies. It consists of a set of wooden bars set across a frame. Each wooden bar produces a single note when struck. The musician uses small mallets to strike the bars. The mallets are usually made of hard rubber but can be made of wood. As well as being a classical orchestral instrument, the xylophone is widely played in African music and many types of folk music. It is also popular in some forms of jazz.",
+      "instrument_family": "Percussion",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 18,
+    "fields": {
+      "name": "Timpani",
+      "description": "Timpani, or kettle drums, are a special type of drum used in an orchestra. These drums are tuned. By adjusting the tension of the membrane stretched across the head of the drum, different notes can be produced. In orchestras they are often used in pairs, with each drum tuned to a different pitch. This helps to give extra emphasis to the lower notes of a harmony. When played with rapidly rolling sticks the sound of the timpani adds a sense of excitement to music.",
+      "instrument_family": "Percussion",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 19,
+    "fields": {
+      "name": "Drums",
+      "description": "Drums have been used around the world since prehistoric times and appear in all shapes and sizes. Known as membranophones, drums make a sound when the stretched membrane is struck with an object, such as a rounded stick or the tips of the fingers. When the membrane is struck it vibrates and produces a sound. Some drums have pegs that can be adjusted to loosen or tighten the membrane, which changes the pitch and quality of the sound. There are many types of drums, such as bongos played with the hands and the Irish bodhran played with a double-ended beater. The drum kit shown here is used in popular and rock music.",
+      "instrument_family": "Percussion",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
+  },
+  {
+    "model": "instruments.instrument",
+    "pk": 20,
+    "fields": {
+      "name": "Piano",
+      "description": "The piano has the widest range of notes of any instrument, covering more than seven octaves. The word “piano” is short for pianoforte, meaning that the instrument can be played softer (what a musician would call \"piano\") or louder (known as \"forte\") in response to the player’s touch on the keyboard. When a key is pressed on the keyboard, it moves a felt-covered hammer that strikes a steel string, making it vibrate to produce a sound. The piano is a versatile instrument and is played in all types of music, including classical, popular, and jazz.",
+      "instrument_family": "Keyboards",
+      "image": "'image.png.'",
+      "media": "'url'"
+    }
   }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 2,
-  "fields": {
-    "name": "Viola",
-    "description": "The viola is similar to the violin and is played in the same way. The violist tucks the instrument under the chin and uses a bow or the fingers to sound the strings. The viola has four strings but is larger and produces a deeper sound than the violin. As well as being an important part of the orchestral string section, the viola is a popular solo instrument in chamber music.",
-    "instrument_family": "Strings",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 3,
-  "fields": {
-    "name": "Cello",
-    "description": "Like the violin and viola, the cello has a hollow wooden body with two sound holes, and four strings running along the body and neck. However, it is much larger and cellists usually play the instrument seated with the body of the cello placed between the legs. Modern cellos usually have an endpin, a spike that supports the instrument on the floor. In the Baroque era (1600–1750), the cello was used largely to accompany other instruments. Later, in works by composers such as Beethoven and Brahms, the cello became an expressive solo instrument in its own right.",
-    "instrument_family": "Strings",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 4,
-  "fields": {
-    "name": "Double Bass",
-    "description": "The largest member of the violin family, the double bass produces the lowest notes of the orchestra’s string section. Like the cello, it is played upright but the bassist usually stands or perches on a high stool. It can be played with a bow but in some types of music, such as jazz and swing, the strings are usually plucked with the fingers.",
-    "instrument_family": "Strings",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 5,
-  "fields": {
-    "name": "Harp",
-    "description": "From folk music to classical concertos, the harp is played in many different forms and musical styles. The basic structure of the harp is a set of strings stretched over a frame. The harpist plucks or strums the strings to produce the notes. Harps vary from large, ornate orchestral models with pedals, to small portable varieties. In an orchestra, a single harp is used in the string section and can be played as a solo instrument. In Irish folk music, the harp is an iconic instrument often used to accompany songs and is the national symbol of Ireland.",
-    "instrument_family": "Strings",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 6,
-  "fields": {
-    "name": "Guitar",
-    "description": "The guitar is one of the most widely played instruments in the world. It is incredibly versatile and is used in many different genres of music. From Spanish flamenco and accompanying folksongs to taking the spotlight as a solo instrument in classical works, the story of the acoustic guitar mirrors that of Western music. The guitar consists of a hollow wooden body with six strings stretched over it and along a narrow neck. Guitars usually have a single, round sound hole in the body. The strings can be strummed with the fingers or plucked. Some guitarists use a plectrum (triangular piece of plastic) to sound the strings.",
-    "instrument_family": "Strings",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 7,
-  "fields": {
-    "name": "Flute",
-    "description": "The modern metal flute has its roots in the simple instruments made of bone, wood, or clay that were played by our ancestors thousands of years ago. Now a finely honed metal instrument, the flute’s smooth, bright sound can be heard at the top of the woodwind section. In the 19th century, instrument makers began experimenting with key systems in the search for a more powerful flute, with more reliable tuning. A flute-maker called Theobald Boehm invented a system that is still used on most modern flutes today. The modern flute has just over three octaves and is usually pitched in C. There are larger, lower-pitched flutes (alto) and smaller, high-pitched ones (the piccolo). Standard C-pitched instruments are formed of three sections (joints) that fit together: the head, body, and foot. Flutes are widely played in classical music, as well as jazz and traditional Celtic music, for which softer-toned wooden instruments are preferred.",
-    "instrument_family": "Woodwind",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 8,
-  "fields": {
-    "name": "Oboe",
-    "description": "The oboe is a double-reed woodwind instrument. It is a long wooden tube that flares out at the end. To produce a sound, the oboist places the tip of the reed (made from a bamboo-like cane) between the lips and blows through the tiny hole. Many oboists make their own reeds, as each player needs a slightly different form. The oboe has a range a little lower than that of the flute. It is a key part of the orchestral woodwind section and is also a solo instrument in its own right.",
-    "instrument_family": "Woodwind",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 9,
-  "fields": {
-    "name": "Clarinet",
-    "description": "The clarinet is a versatile woodwind instrument. Its warm tone and expressive capabilities are suited to a variety of musical styles, including classical and jazz. The large clarinet family ranges from the contrabass, which plays the lowest range of notes, to the piccolo clarinet, which plays the highest. Like the saxophone, the clarinet is a single reed instrument. Players blow into the narrow gap between the reed and mouthpiece causing the reed to vibrate and produce a sound. The modern clarinet uses a system of rings and keys, to allow the clarinettist to play a wide range of notes. There are four main sections that make up the clarinet (from top to bottom): the barrel, upper joint, lower joint, and bell. The standard clarinet is in B flat and is used in most styles of music. Clarinets are also made in A, which are more often used in orchestras and chamber music.",
-    "instrument_family": "Woodwind",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 10,
-  "fields": {
-    "name": "Bassoon",
-    "description": "The largest instrument of the woodwind family with the lowest pitch, the bassoon uses a double reed, made from two pieces of cane tied together. The bassoon is played in a similar way to the oboe. The bassoonist presses the reed between the lips and blows to sound the instrument. The reed is connected to the body of the instrument by a curved metal tube, called a crook. There are four sections, or joints, of a bassoon that fit together (from top to bottom): the bell, bass, wing, and butt. A complex system of keys is controlled by the player’s hands to produce different notes.",
-    "instrument_family": "Woodwind",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 11,
-  "fields": {
-    "name": "Saxophone",
-    "description": "Originally invented more than 150 years ago in Paris for use in military bands and orchestras, this impressive woodwind instrument, usually made of brass and more popularly known as the sax, was never really taken up by composers as an orchestral instrument. Instead, it was embraced wholeheartedly by jazz and swing bands, becoming popular as a solo instrument, and today, plays a part in most styles of music. Adolphe Sax invented 14 different saxophones that were divided into seven types (from smallest to largest): sopranino, soprano, alto, tenor, baritone, bass, and contrabass. They all have the keys in the same place, so once you can play one, you should be able to play them all!",
-    "instrument_family": "Woodwind",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 12,
-  "fields": {
-    "name": "Trumpet",
-    "description": "The ancestors of the modern trumpet have been a part of human culture for a very long time. Old trumpet-like instruments played by ancient peoples were made of conch-shell, animal horn, wood or metal. Throughout history the trumpet has been used to sound alarms, gather people together, as a call to war, and to add luster to parade music. Like the violin, the trumpet is the smallest member of its family and plays the highest pitches with its bright and vibrant sound. Today's modern trumpet is a slender brass pipe with three attached valves, which is curved and bent into long loops. If you stretched out the trumpet to its full length, it would be 6 ½ feet long! There are 2 to 4 trumpets in an orchestra and they play both melody and harmony and also support the rhythm. You play the trumpet by holding it horizontally, buzzing your lips into the mouthpiece, and pressing down the three valves in various combinations to change pitch.",
-    "instrument_family": "Brass",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 13,
-  "fields": {
-    "name": "French Horn",
-    "description": "Unlike the English horn, which is neither English nor a horn, the French horn does originally come from France and is unquestionably a horn. It comes from the French hunting horn of the 1600s, and produces a wide variety of sound ranging from very loud to very soft, and from harsh and blaring to mellow and smooth. The French horn's 18 feet of tubing is rolled up into a circular shape, with a large bell at its end. There are anywhere from 2 to 8 French horns in an orchestra, and they play both melody and harmony as well as rhythm. To play the French horn, hold it with the bell curving downward and buzz into the mouthpiece. Your left hand plays the three valves and you can change the type of sound you make by the way you place your right hand in the bell.",
-    "instrument_family": "Brass",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 14,
-  "fields": {
-    "name": "Trombone",
-    "description": "The trombone is the only instrument in the brass family that uses a slide instead of valves to change pitch. A standard trombone is made of long thin brass pipes. Two U-shaped pipes are linked at opposite ends to form an \"S.\" One pipe slides into the other so the total length of the pipe can be extended or shortened. You play the trombone by holding it horizontally, buzzing into the mouthpiece, and using your right hand to change pitch by pushing or pulling the slide to one of seven different positions. If you stretch the trombone out straight, it is about 9 feet long. There are usually 3 trombones in the orchestra and they play pitches in the same range as the cello and bassoon. The three trombones often play harmonies together.",
-    "instrument_family": "Brass",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 15,
-  "fields": {
-    "name": "Tuba",
-    "description": "This is the grandfather of the brass family. The tuba is the largest and lowest brass instrument and anchors the harmony not only of the brass family but the whole orchestra with its deep rich sound. Like the other brasses, the tuba is a long metal tube, curved into an oblong shape, with a huge bell at the end. Tubas range in size from 9 to 18 feet; the longer they are, the lower they sound. Standard tubas have about 16 feet of tubing. There is generally only one tuba in an orchestra and it usually plays harmony. You play the tuba sitting down with the instrument on your lap and the bell facing up. You blow and buzz into a very large mouthpiece and use your hand to press down on the valves which changes the sound. It takes a lot of breath to make sound with the tuba!",
-    "instrument_family": "Brass",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 16,
-  "fields": {
-    "name": "Cornet",
-    "description": "The cornet is similar to the trumpet but is usually played in bands and only occasionally in orchestras. It differs from the trumpet in that it is more compact and has a wider bore (tube). To produce a sound, the cornet player places the lips to the mouthpiece, presses them together firmly, and blows air through the middle to make them vibrate or “buzz”. By altering the pressure of the lips, the cornet player can change the pitch produced. Cornets often take the lead melody in traditional brass bands, military bands, and are sometimes used in jazz bands.",
-    "instrument_family": "Brass",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 17,
-  "fields": {
-    "name": "Xylophone",
-    "description": "The xylophone is a percussion instrument that can play melodies. It consists of a set of wooden bars set across a frame. Each wooden bar produces a single note when struck. The musician uses small mallets to strike the bars. The mallets are usually made of hard rubber but can be made of wood. As well as being a classical orchestral instrument, the xylophone is widely played in African music and many types of folk music. It is also popular in some forms of jazz.",
-    "instrument_family": "Percussion",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 18,
-  "fields": {
-    "name": "Timpani",
-    "description": "Timpani, or kettle drums, are a special type of drum used in an orchestra. These drums are tuned. By adjusting the tension of the membrane stretched across the head of the drum, different notes can be produced. In orchestras they are often used in pairs, with each drum tuned to a different pitch. This helps to give extra emphasis to the lower notes of a harmony. When played with rapidly rolling sticks the sound of the timpani adds a sense of excitement to music.",
-    "instrument_family": "Percussion",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 19,
-  "fields": {
-    "name": "Drums",
-    "description": "Drums have been used around the world since prehistoric times and appear in all shapes and sizes. Known as membranophones, drums make a sound when the stretched membrane is struck with an object, such as a rounded stick or the tips of the fingers. When the membrane is struck it vibrates and produces a sound. Some drums have pegs that can be adjusted to loosen or tighten the membrane, which changes the pitch and quality of the sound. There are many types of drums, such as bongos played with the hands and the Irish bodhran played with a double-ended beater. The drum kit shown here is used in popular and rock music.",
-    "instrument_family": "Percussion",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-},
-{
-  "model": "instruments.instrument",
-  "pk": 20,
-  "fields": {
-    "name": "Piano",
-    "description": "The piano has the widest range of notes of any instrument, covering more than seven octaves. The word “piano” is short for pianoforte, meaning that the instrument can be played softer (what a musician would call \"piano\") or louder (known as \"forte\") in response to the player’s touch on the keyboard. When a key is pressed on the keyboard, it moves a felt-covered hammer that strikes a steel string, making it vibrate to produce a sound. The piano is a versatile instrument and is played in all types of music, including classical, popular, and jazz.",
-    "instrument_family": "Keyboards",
-    "image": "'image.png.'",
-    "media": "'url'"
-  }
-}
-]
+  ]
