@@ -17,7 +17,7 @@ class User(AbstractUser):
         (TEACHER, 'Teacher'),
     ]
     user_type = models.CharField(
-        max_length=2,
+        max_length=10,
         choices=USER_TYPE_CHOICES,
     )
     PIANO='Piano'
@@ -100,3 +100,22 @@ class User(AbstractUser):
         max_length=15,
         choices=LOCATION_TYPE_CHOICES
         )
+
+
+
+
+# class Comment(models.Model):
+#     content = models.TextField(max_length=250)
+#     user = models.ForeignKey(
+#         User,
+#         related_name='comments',
+#         on_delete=models.CASCADE
+#     )
+#     owner = models.ForeignKey(
+#         'jwt_auth.User',
+#         related_name='comments',
+#         on_delete=models.CASCADE
+#     )
+
+#     def __str__(self):
+#         return f'Comment {self.id} on {self.comment}'

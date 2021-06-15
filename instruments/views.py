@@ -7,6 +7,7 @@ from .serializers import InstrumentSerializer
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticated
 
+
 class InstrumentListView(APIView):
     permission_classes=(IsAuthenticated, )
     def get(self, _request):

@@ -1,6 +1,8 @@
 
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImV4cCI6MTYyNDI4MTIwNn0.AW4pPTpmZ4ElwvH7aMRdfLdmGErybKUXaPtCJxG25MM
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyNDM1OTU5OH0._xWMCcS6fg9SmQhdIKyon1NvN2Ace97xuWE-CtIRiwk
 # Get all Instruments 
+
+@token2 = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDM1OTczMX0.Q_g4nR3lSsA4IO3AICDbFaVQ77Aqo61o2WZyxiFFoug
 GET http://localhost:8000/api/instruments/
 Content-Type: application/json
 Authorization: Bearer {{token}}
@@ -38,3 +40,50 @@ Content-Type: application/json
   "email": "Drew@email.com",
   "password": "Drew123456789"
 }
+
+###
+POST http://localhost:8000/api/conversations/1/conversations/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "text" : "im good "
+} 
+
+
+###
+# Register a User
+
+POST http://localhost:8000/api/auth/register/
+Content-Type: application/json
+
+{
+  "password":"Dimi123456789",
+  "passwordConfirmation": "Dimi123456789",
+  "username": "Dimi",
+  "email": "dimi@email.com",
+  "firstName": "Dimi",
+  "lastName":"Tsonev",
+  "bio": "Hello Drew",
+  "userType":"Student",
+  "instrumentType": "Piano",
+  "locationTypeChoices": "London"
+}
+###
+# Login second User
+
+POST http://localhost:8000/api/auth/login/
+Content-Type: application/json
+
+
+
+{
+  "email": "dimi@email.com",
+  "password": "Dimi123456789"
+}
+
+###
+
+GET http://localhost:8000/api/conversations/
+Content-Type: application/json
+Authorization: Bearer {{token}}

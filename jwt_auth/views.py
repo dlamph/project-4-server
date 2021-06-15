@@ -45,4 +45,15 @@ class LoginView(APIView):
         return Response(
             {'token': token, 'message': f'Welcome back {user_to_login.username}'}
         )
+# class NestedUserSerializer(serializers.ModelSerializer):
 
+#     class Meta:
+#         model = User
+#         fields = ('id', 'username', 'profile_image')
+
+# class InstrumentListView(APIView):
+#     permission_classes=(IsAuthenticated, )
+#     def get(self, _request):
+#         instruments = Instrument.objects.all()
+#         serlialized_instruments = InstrumentSerializer(instruments,many=True)
+#         return Response(serlialized_instruments.data, status=status.HTTP_200_OK)
