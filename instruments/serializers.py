@@ -8,10 +8,3 @@ class InstrumentSerializer(serializers.ModelSerializer):
         model = Instrument
         fields = '__all__'
 
-# class FeedbackSerlializer(serializers.ModelSerializer):
-#     class Meta: 
-#         model = Feedback
-#         fields = '__all__'
-
-# class PopulatedTeacherSerialiser(TeacherSerialiser):
-#     feedbacks = FeedbackSerlializer(many=True)

@@ -1,11 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-
-# class User(AbstractUser):
-#     is_student = models.BooleanField('student status', default=False)
-#     is_teacher = models.BooleanField('teacher status', default=False)
-
-
 class User(AbstractUser):
     
     email = models.CharField(max_length=50)
@@ -99,23 +93,5 @@ class User(AbstractUser):
     location_type_choices = models.CharField(
         max_length=15,
         choices=LOCATION_TYPE_CHOICES
-        )
+    )
 
-
-
-
-# class Comment(models.Model):
-#     content = models.TextField(max_length=250)
-#     user = models.ForeignKey(
-#         User,
-#         related_name='comments',
-#         on_delete=models.CASCADE
-#     )
-#     owner = models.ForeignKey(
-#         'jwt_auth.User',
-#         related_name='comments',
-#         on_delete=models.CASCADE
-#     )
-
-#     def __str__(self):
-#         return f'Comment {self.id} on {self.comment}'

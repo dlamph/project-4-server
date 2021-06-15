@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'instruments',
     'jwt_auth',
-    'conversations'
+    'conversations',
+    'reviews'
 ]
 
 MIDDLEWARE = [
