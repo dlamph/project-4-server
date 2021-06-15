@@ -1,5 +1,5 @@
 
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImV4cCI6MTYyNDI4MTIwNn0.AW4pPTpmZ4ElwvH7aMRdfLdmGErybKUXaPtCJxG25MM
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImV4cCI6MTYyNDM3ODQ1N30.yhp8CwXhltnKBtU1MikAZCqZgBFMTjiRZMGJUU5BpxM
 # Get all Instruments 
 GET http://localhost:8000/api/instruments/
 Content-Type: application/json
@@ -38,3 +38,15 @@ Content-Type: application/json
   "email": "Drew@email.com",
   "password": "Drew123456789"
 }
+
+###
+
+# # Display all Profiles
+# GET http://localhost:8000/api/profile/
+
+###
+
+# View User Profile
+GET http://localhost:8000/api/profile/
+Content-Type: application/json
+Authorization: Bearer {{token}}

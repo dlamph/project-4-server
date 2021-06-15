@@ -1,11 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-
-# class User(AbstractUser):
-#     is_student = models.BooleanField('student status', default=False)
-#     is_teacher = models.BooleanField('teacher status', default=False)
-
-
 class User(AbstractUser):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
@@ -103,3 +97,4 @@ class User(AbstractUser):
       max_length=15,
       choices=LOCATION_TYPE_CHOICES
     )
+
