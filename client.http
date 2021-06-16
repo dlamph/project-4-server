@@ -45,10 +45,12 @@ Content-Type: application/json
 # Send a message
 POST http://localhost:8000/api/conversations/1/conversations/
 Content-Type: application/json
-Authorization: Bearer {{token2}}
+Authorization: Bearer {{token}}
 
 {
-  "text" : "im good "
+  
+
+  "text": "hello how are you "
 } 
 
 

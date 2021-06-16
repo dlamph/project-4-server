@@ -23,6 +23,7 @@ class ConversationsDetailView(APIView):
 
 class ConversationsListView(APIView):
     permission_classes=(IsAuthenticated, )
+    
     def get(self, _request):
         conversations = Conversation.objects.all()
         serlialized_conversations = PopulatedConversationSerializer(conversations,many=True)
