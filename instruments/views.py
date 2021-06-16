@@ -5,11 +5,11 @@ from .models import Instrument
 from .serializers import InstrumentSerializer
 # PopulatedTeacherSerialiser
 from rest_framework.exceptions import NotFound
-from rest_framework.permissions import IsAuthenticated
+
 
 
 class InstrumentListView(APIView):
-    permission_classes=(IsAuthenticated, )
+
     def get(self, _request):
         instruments = Instrument.objects.all()
         serlialized_instruments = InstrumentSerializer(instruments,many=True)

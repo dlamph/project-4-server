@@ -1,4 +1,15 @@
 {
   "python.pythonPath": "/Users/Drew/.local/share/virtualenvs/server-dTocdQHU/bin/python",
-  "python.linting.pylintEnabled": true
+  "python.linting.pylintEnabled": true,
+  "workbench.colorCustomizations": {
+  "statusBar.background": "#fafafa",
+  "titleBar.activeBackground": "#fafafa",
+  "titleBar.inactiveBackground": "#fafafa",
+  "statusBar.foreground": "#000",
+  "titleBar.inactiveForeground": "#000",
+  "titleBar.activeForeground": "#000",
+  },
+  "window.title": "BACKEND"
 }
+
+

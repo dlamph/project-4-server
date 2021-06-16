@@ -25,15 +25,6 @@ class Instrument(models.Model):
         return f'{self.name}'
         
 
-# class Feedback(models.Model):
-#     contet = models.TextField(max_length=250)
-#     teacher=models.ForeignKey(Teacher,
-#     related_name='feedbacks',
-#     on_delete=models.CASCADE)
-#     # we need a model Teacher 
-#     def __str__(self):
-#         return f'Feedback {self.id} on {self.teacher}'
-
 
 
 
