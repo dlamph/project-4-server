@@ -5,11 +5,11 @@
 @token2 = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDM1OTczMX0.Q_g4nR3lSsA4IO3AICDbFaVQ77Aqo61o2WZyxiFFoug
 GET http://localhost:8000/api/instruments/
 Content-Type: application/json
-Authorization: Bearer {{token}}
+
 
 ###
 # Get single Instruments 
-GET http://localhost:8000/api/instruments/1
+GET http://localhost:8000/api/instruments/1/
 
 ###
 # Register a User
