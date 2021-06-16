@@ -15,4 +15,3 @@ class PopulatedConversationSerializer(ConversationSerializer):
 
     sender = NestedUserSerializer()
     receiver = NestedUserSerializer()
-

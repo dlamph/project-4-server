@@ -1,15 +1,15 @@
 
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyNDM4MDc4M30.y2586nRCdM_FmXRJh4zB9LEMmZ1uBwRuQ9iXX0RQrKQ
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyNDQ0Nzg4Nn0.h93o-lWpjk9M2LtTF0HJi9doBZr_JWJRNEwn7pLWN-g
 # Get all Instruments 
 
-@token2 = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDM1OTczMX0.Q_g4nR3lSsA4IO3AICDbFaVQ77Aqo61o2WZyxiFFoug
+@token2 = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDQ0ODA2MH0.3nTlq82Eo2u2ljw3AaIsaaL55FyvRQPRQ3WdeASQcys
 GET http://localhost:8000/api/instruments/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ###
 # Get single Instruments 
-GET http://localhost:8000/api/instruments/1
+GET http://localhost:8000/api/instruments/1/
 
 ###
 # Register a User
@@ -42,6 +42,7 @@ Content-Type: application/json
 }
 
 ###
+# Send a message
 POST http://localhost:8000/api/conversations/1/conversations/
 Content-Type: application/json
 Authorization: Bearer {{token}}
@@ -54,7 +55,13 @@ Authorization: Bearer {{token}}
 
 
 ###
-# Register a User
+# View User Profile
+GET http://localhost:8000/api/auth/profile/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+# Register second User
 
 POST http://localhost:8000/api/auth/register/
 Content-Type: application/json
@@ -83,24 +90,19 @@ Content-Type: application/json
 }
 
 ###
-
+# Showing all conversations
 GET http://localhost:8000/api/conversations/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
-# # Display all Profiles
-# GET http://localhost:8000/api/profile/
-
-###
-
-# View User Profile
-GET http://localhost:8000/api/auth/profile/3/
+### Create a review
+POST http://localhost:8000/api/reviews/2/reviews/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
-###
-
-# View All User Profiles
-GET http://localhost:8000/api/auth/profile/
-Content-Type: application/json
-Authorization: Bearer {{token}}
+{
+  "user": 2,
+  "content": "First Review",
+  "created_at": "",
+  "rating": 1
+}

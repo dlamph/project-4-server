@@ -3,13 +3,8 @@ from django.contrib.auth import get_user_model
 import django.contrib.auth.password_validation as validation
 from django.contrib.auth.hashers import make_password
 from django.core.exceptions import ValidationError
-from reviews.serializers import ReviewSerializer
-# from reviews.models import Review
-# from django.db.models import fields
+
 from .models import User
-
-from .nested import NestedUserSerializer
-
 
 User = get_user_model()
 class UserSerializer(serializers.ModelSerializer):
@@ -37,8 +32,3 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = '__all__'
-
-
-class PopulatedUserSerializer(NestedUserSerializer):
-    reviews_received = ReviewSerializer(many=True)
-    reviews_posted = ReviewSerializer(many=True)
