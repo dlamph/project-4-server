@@ -38,14 +38,6 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = '__all__'
 
-#Can we use a nested user to return the information that we want to display
-# on our user profile page? With the details in fields.
-    # class NestedUserSerializer(serializers.ModelSerializer):
-
-    #     class Meta:
-    #         model = User
-    #         fields = ('id', 'username', 'profile_image', )
-
 
 class PopulatedUserSerializer(NestedUserSerializer):
     reviews_received = ReviewSerializer(many=True)

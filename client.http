@@ -1,5 +1,5 @@
 
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyNDM1OTU5OH0._xWMCcS6fg9SmQhdIKyon1NvN2Ace97xuWE-CtIRiwk
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyNDM4MDc4M30.y2586nRCdM_FmXRJh4zB9LEMmZ1uBwRuQ9iXX0RQrKQ
 # Get all Instruments 
 
 @token2 = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDM1OTczMX0.Q_g4nR3lSsA4IO3AICDbFaVQ77Aqo61o2WZyxiFFoug
@@ -44,10 +44,12 @@ Content-Type: application/json
 ###
 POST http://localhost:8000/api/conversations/1/conversations/
 Content-Type: application/json
-Authorization: Bearer {{token2}}
+Authorization: Bearer {{token}}
 
 {
-  "text" : "im good "
+  
+
+  "text": "hello how are you "
 } 
 
 
@@ -75,8 +77,6 @@ Content-Type: application/json
 POST http://localhost:8000/api/auth/login/
 Content-Type: application/json
 
-
-
 {
   "email": "dimi@email.com",
   "password": "Dimi123456789"
@@ -94,6 +94,13 @@ Authorization: Bearer {{token}}
 ###
 
 # View User Profile
-GET http://localhost:8000/api/profile/
+GET http://localhost:8000/api/auth/profile/3/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+# View All User Profiles
+GET http://localhost:8000/api/auth/profile/
 Content-Type: application/json
 Authorization: Bearer {{token}}

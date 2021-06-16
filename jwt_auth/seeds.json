@@ -1,0 +1,68 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$9KlHexDlzVpANC0QogCgln$X/E2QObuOf7FDAZJrVDzV0+5mZxe8slejYdPEMpOcwk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Drew",
+    "first_name": "Drew",
+    "last_name": "Lamph",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-15T10:51:24.128Z",
+    "email": "Drew@email.com",
+    "profile_image": " https://www.clipartkey.com/mpngs/m/152-1520367_user-profile-default-image-png-clipart-png-download.png",
+    "user_type": "Student",
+    "instrument_type": "Piano",
+    "location_type_choices": "London",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$wAGFkqmlxQ8l3D4hWRAYCZ$7qNrYkE1Sul+tEvxKKnYbU/X18N7uQ7jSyNFGV+k010=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-06-15T10:52:47.258Z",
+    "email": "admin@mail.com",
+    "profile_image": " https://www.clipartkey.com/mpngs/m/152-1520367_user-profile-default-image-png-clipart-png-download.png",
+    "user_type": "",
+    "instrument_type": "",
+    "location_type_choices": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$6gHjCG8DXL57hz8xvne6Kr$8ZwbY9Lqd1sKGwgwayBB3qCt6HLHL3pOqyLOf/Wmi+c=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Dimi",
+    "first_name": "Dimi",
+    "last_name": "Tsonev",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-15T11:01:21.184Z",
+    "email": "dimi@email.com",
+    "profile_image": " https://www.clipartkey.com/mpngs/m/152-1520367_user-profile-default-image-png-clipart-png-download.png",
+    "user_type": "Student",
+    "instrument_type": "Piano",
+    "location_type_choices": "London",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

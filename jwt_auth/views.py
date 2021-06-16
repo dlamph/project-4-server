@@ -79,7 +79,7 @@ class ProfileDetailView(APIView):
 
 class ProfileListView(APIView):
 
-    permission_classes = (IsAuthenticatedOrReadOnly, )
+    permission_classes = (IsAuthenticated, )
 
     def get(self, _request):
         users = User.objects.all()

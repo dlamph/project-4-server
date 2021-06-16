@@ -8,14 +8,14 @@ class Review(models.Model):
     rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
     # NEED TO ADD THE REVIEW TO THE USER PROFILE (TEACHER OR STUDENT). Is this doing it?
     user = models.ForeignKey(
-      'jwt_auth.User',
-      related_name='reviews_received',
-      on_delete=models.CASCADE
+    'jwt_auth.User',
+    related_name='reviews_received',
+    on_delete=models.CASCADE
     )
     owner = models.ForeignKey(
-      'jwt_auth.User',
-      related_name='reviews_posted',
-      on_delete=models.CASCADE
+    'jwt_auth.User',
+    related_name='reviews_posted',
+    on_delete=models.CASCADE
     )
 
     def __str__(self):
