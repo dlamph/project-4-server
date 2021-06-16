@@ -1,15 +1,14 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import serializers, status
+from rest_framework.exceptions import NotFound
+from rest_framework.permissions import AllowAny
 from .models import Instrument
 from .serializers import InstrumentSerializer
 # PopulatedTeacherSerialiser
-from rest_framework.exceptions import NotFound
-from rest_framework.permissions import IsAuthenticated
-
 
 class InstrumentListView(APIView):
-    permission_classes=(IsAuthenticated, )
+    permission_classes=(AllowAny, )
     def get(self, _request):
         instruments = Instrument.objects.all()
         serlialized_instruments = InstrumentSerializer(instruments,many=True)
