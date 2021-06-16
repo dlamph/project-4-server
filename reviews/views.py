@@ -5,12 +5,17 @@ from rest_framework.exceptions import NotFound, PermissionDenied
 from rest_framework import status
 
 from reviews.models import Review
-from .serializers import ReviewSerializer
+from .serializers import ReviewSerializer, PopulatedReviewSerializer
 
 # Create your views here.
 class ReviewListView(APIView):
 
     permission_classes = (IsAuthenticated, )
+
+    def get(self, _request):
+        reviews = Review.objects.all()
+        serialized_reviews = PopulatedReviewSerializer(reviews, many=True)
+        return Response(serialized_reviews.data, status.HTTP_200_OK)
 
     def post(self, request, user_pk):
         request.data[''] = user_pk

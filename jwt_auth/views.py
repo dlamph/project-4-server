@@ -2,14 +2,14 @@ from datetime import datetime, timedelta
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied, NotFound
-from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
 from .serializers import UserSerializer
-from .serializers import PopulatedUserSerializer
+from .populated import PopulatedUserSerializer
 
 User = get_user_model()
 class RegisterView(APIView):
@@ -47,41 +47,25 @@ class LoginView(APIView):
         return Response(
             {'token': token, 'message': f'Welcome back {user_to_login.username}'}
         )
-# class NestedUserSerializer(serializers.ModelSerializer):
-
-#     class Meta:
-#         model = User
-#         fields = ('id', 'username', 'profile_image')
-
-# class InstrumentListView(APIView):
-#     permission_classes=(IsAuthenticated, )
-#     def get(self, _request):
-#         instruments = Instrument.objects.all()
-#         serlialized_instruments = InstrumentSerializer(instruments,many=True)
-#         return Response(serlialized_instruments.data, status=status.HTTP_200_OK)
-
-## Trying to create a user profile view which displays our teacher/student
-class ProfileDetailView(APIView):
-
-    permission_classes = (IsAuthenticated, )
-
-    def get_user(self, pk):
-
-        try:
-            return User.objects.get(pk=pk)
-        except User.DoesNotExist:
-            raise NotFound()
-
-    def get(self, _request, pk):
-        user = self.get_user(pk=pk)
-        serialized_user = PopulatedUserSerializer(user)
-        return Response(serialized_user.data, status=status.HTTP_200_OK)
 
 class ProfileListView(APIView):
 
-    permission_classes = (IsAuthenticatedOrReadOnly, )
+    permission_classes = (IsAuthenticated, )
 
     def get(self, _request):
         users = User.objects.all()
         serialized_users = PopulatedUserSerializer(users, many=True)
         return Response(serialized_users.data, status=status.HTTP_200_OK)
+
+class ProfileDetailView(APIView):
+
+    permission_classes = (IsAuthenticated, )
+
+    def get(self, _request, pk):
+        try:
+            user = User.objects.get(pk=pk)
+            serialized_user = PopulatedUserSerializer(user)
+            return Response(serialized_user.data, status=status.HTTP_200_OK)
+        except User.DoesNotExist:
+            raise NotFound()
+

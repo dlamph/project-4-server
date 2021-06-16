@@ -14,7 +14,7 @@ class ConversationsDetailView(APIView):
     def post(self, request ,pk):
         request.data['sender'] = request.user.id
         request.data['receiver'] =pk
-        message_to_create = PopulatedConversationSerializer(data=request.data)
+        message_to_create = ConversationSerializer(data=request.data)
         if message_to_create.is_valid():
             message_to_create.save()
             return Response(message_to_create.data, status=status.HTTP_201_CREATED)

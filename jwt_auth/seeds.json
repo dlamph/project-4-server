@@ -1,0 +1,46 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$DjvKBCxxohaf0428ccnBPM$L8ZNSjn9jyi4bxhr/ho3RnSXe2I6uO1YhH6WY3TMcXM=",
+    "last_login": "2021-06-14T13:21:53.704Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-06-14T13:21:19.450Z",
+    "email": "admin@email.com",
+    "profile_image": "https://www.clipartkey.com/mpngs/m/152-1520367_user-profile-default-image-png-clipart-png-download.png",
+    "user_type": "",
+    "instrument_type": "",
+    "location_type_choices": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$Y4gqGgD6CVgl8qDm5yc5r2$5lEo/D4rLCr8vUUyFdA0gPzCCBvigcLAjZGBw8Kd/Sk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Drew",
+    "first_name": "Drew",
+    "last_name": "Lamph",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-15T16:14:10.427Z",
+    "email": "Drew@email.com",
+    "profile_image": "https://www.clipartkey.com/mpngs/m/152-1520367_user-profile-default-image-png-clipart-png-download.png",
+    "user_type": "Student",
+    "instrument_type": "Piano",
+    "location_type_choices": "London",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
