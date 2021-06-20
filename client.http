@@ -1,8 +1,8 @@
 
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyNDQ0Nzg4Nn0.h93o-lWpjk9M2LtTF0HJi9doBZr_JWJRNEwn7pLWN-g
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjcsImV4cCI6MTYyNDgwNTI3MH0.UyTB-aVKSCHw8QiuSZ8IzWvEprqv9TH1pf79dmIOgPU
 # Get all Instruments 
 
-@token2 = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDQ0ODA2MH0.3nTlq82Eo2u2ljw3AaIsaaL55FyvRQPRQ3WdeASQcys
+@token2 = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYsImV4cCI6MTYyNDgyMzQ0M30.Tal-yzttzwCyh-RcZ96e3VYz_FhmiL7dItAjYMfYkEc
 GET http://localhost:8000/api/instruments/
 Content-Type: application/json
 
@@ -31,7 +31,6 @@ Content-Type: application/json
 }
 
 ###
-
 # Login a User
 POST http://localhost:8000/api/auth/login/
 Content-Type: application/json
@@ -48,17 +47,21 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  
 
   "text": "hello how are you "
 } 
 
-
 ###
-# View User Profile
+# View User Profiles
 GET http://localhost:8000/api/auth/profile/
 Content-Type: application/json
-Authorization: Bearer {{token}}
+Authorization: Bearer {{token2}}
+
+### 
+
+#Delete user 
+DELETE http://localhost:8000/api/auth/profile/7/
+Authorization: Bearer {{token2}}
 
 ###
 # Register second User
@@ -79,8 +82,8 @@ Content-Type: application/json
   "locationTypeChoices": "London"
 }
 ###
-# Login second User
 
+# Login second User
 POST http://localhost:8000/api/auth/login/
 Content-Type: application/json
 
@@ -101,8 +104,33 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "user": 2,
+  "user": 7,
   "content": "First Review",
   "created_at": "",
   "rating": 1
+}
+###
+
+### Delete a review
+DELETE   http://localhost:8000/api/reviews/27/
+Authorization: Bearer {{token}}
+
+###
+
+# Update user profile 
+PUT http://localhost:8000/api/auth/profile/6/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjYsImV4cCI6MTYyNDgyMzQ0M30.Tal-yzttzwCyh-RcZ96e3VYz_FhmiL7dItAjYMfYkEc
+
+{
+  "password":"Drew123456789",
+  "passwordConfirmation": "Drew123456789",
+  "username": "Drew",
+  "email": "Drew@email.com",
+  "firstName": "Drew",
+  "lastName":"Lamph",
+  "bio": "Hello World",
+  "userType":"Student",
+  "instrumentType": "Piano",
+  "locationTypeChoices": "London"
 }

@@ -10,6 +10,7 @@ import jwt
 
 from .serializers import UserSerializer
 from .populated import PopulatedUserSerializer
+from .serializers import EditUserSerializer
 
 User = get_user_model()
 class RegisterView(APIView):
@@ -69,3 +70,21 @@ class ProfileDetailView(APIView):
         except User.DoesNotExist:
             raise NotFound()
 
+    def delete(self, request, pk):
+        try:
+            user_to_delete = User.objects.get(pk=pk)
+            if user_to_delete.id != request.user.id:
+                raise PermissionDenied()
+            user_to_delete.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except User.DoesNotExist:
+            raise NotFound()
+
+    def put(self, request, pk ):
+        user_to_update = User.objects.get(pk=pk)
+        request.data['owner'] = request.user.id
+        update_user = EditUserSerializer(user_to_update, data=request.data)
+        if update_user.is_valid():
+            update_user.save()
+            return Response(update_user.data, status=status.HTTP_202_ACCEPTED )
+        return Response(update_user.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
