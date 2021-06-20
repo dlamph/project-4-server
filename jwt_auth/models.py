@@ -1,9 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
-    
+    bio = models.TextField(max_length=500)
+    first_name=models.CharField(max_length=50)
+    last_name=models.CharField(max_length=50)
     email = models.CharField(max_length=50)
-    profile_image = models.CharField(max_length= 250 , default=" https://www.clipartkey.com/mpngs/m/152-1520367_user-profile-default-image-png-clipart-png-download.png")
+    profile_image = models.CharField(max_length= 250 ,
+    default=" https://www.clipartkey.com/mpngs/m/152-1520367_user-profile-default-image-png-clipart-png-download.png")
     STUDENT='Student'
     TEACHER ='Teacher'
     USER_TYPE_CHOICES = [

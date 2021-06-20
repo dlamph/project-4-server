@@ -18,5 +18,9 @@ class PopulatedUserSerializer(NestedUserSerializer):
           'instrument_type',
           'location_type_choices',
           'reviews_received',
-          'reviews_posted'
+          'reviews_posted',
+          'first_name',
+          'bio',
+          'last_name',
+          'user_type'
         )
