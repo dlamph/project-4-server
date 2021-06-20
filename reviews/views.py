@@ -28,12 +28,11 @@ class ReviewListView(APIView):
 
 
 class ReviewDetailView(APIView):
+    # permission_classes = (IsAuthenticated, )
 
-    def delete(self, request, _user_pk, review_pk):
+    def delete(self, _request, review_pk):
         try:
             review_to_delete = Review.objects.get(pk=review_pk)
-            if review_to_delete.owner != request.user:
-                raise PermissionDenied()
             review_to_delete.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Review.DoesNotExist:
