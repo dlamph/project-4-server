@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
-    bio = models.TextField(max_length=500)
+    bio = models.TextField(max_length=3000)
     first_name=models.CharField(max_length=50)
     last_name=models.CharField(max_length=50)
     email = models.CharField(max_length=50)

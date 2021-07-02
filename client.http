@@ -18,16 +18,17 @@ POST http://localhost:8000/api/auth/register/
 Content-Type: application/json
 
 {
-  "password":"Drew123456789",
-  "passwordConfirmation": "Drew123456789",
-  "username": "Drew",
-  "email": "Drew@email.com",
-  "firstName": "Drew",
-  "lastName":"Lamph",
-  "bio": "Hello World",
-  "userType":"Student",
-  "instrumentType": "Piano",
-  "locationTypeChoices": "London"
+  "password":"fedueind123",
+  "passwordConfirmation": "fedueind123",
+  "username": "Amy",
+  "email": "amy@email",
+  "firstName": "Amy",
+  "lastName":"Welch",
+  "bio": "My name is Amy and I'm a graduate of the Royal Northern College of Music where I gained a First Class (Hons) BMus. I've been playing the violin for 20 years and, prior to studying at conservatoire level, I passed all ABRSM Violin Grades 1-8.Currently I work for MAPAS (Salford's Music service) and Wigan Music Service. I have a huge range of experience as a soloist, orchestral player and perform regularly with the Cassia String Quartet.I provide private one-to-one violin or viola tuition..",
+  "userType":"Teacher",
+  "instrumentType": "Viola",
+  "locationTypeChoices": "Manchester",
+  "profileImage":"https://res.cloudinary.com/dosqoxtnj/image/upload/v1624197462/7073a677a7e520f7298e0e0a2e449edb53984101_dl0854.jpg"
 }
 
 ###

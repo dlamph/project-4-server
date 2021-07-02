@@ -1,0 +1,68 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "content": "Thank You so much for being such a fantastic teacher! I’ve loved every minute and will really miss regular lessons! You’ve really made me love playing the piano.",
+    "created_at": "2021-06-22T00:29:53.863Z",
+    "rating": 5,
+    "user": 51,
+    "owner": 67
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "content": "Emy has been helping our daughter (6) with general tuition Viola for about three months. She is punctual, polite and has quickly established an excellent rapport with our child. We have been very impressed with what we have seen so far.",
+    "created_at": "2021-06-22T00:38:52.728Z",
+    "rating": 5,
+    "user": 63,
+    "owner": 67
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 5,
+  "fields": {
+    "content": "Amy taught my son for a couple of years and was always professional, kind and encouraging - I highly recommend her.",
+    "created_at": "2021-06-22T00:40:25.238Z",
+    "rating": 5,
+    "user": 63,
+    "owner": 67
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 6,
+  "fields": {
+    "content": "Amy is very reliable and answered any queries quickly. My 5 year old really like Amy friendly personality and is making great progress with her viola playing. I can highly recommend Amy.",
+    "created_at": "2021-06-22T00:42:54.318Z",
+    "rating": 5,
+    "user": 63,
+    "owner": 67
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 7,
+  "fields": {
+    "content": "Prompt in her reply very friendly and helpful",
+    "created_at": "2021-06-22T00:43:27.577Z",
+    "rating": 5,
+    "user": 58,
+    "owner": 67
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 8,
+  "fields": {
+    "content": "Tina is a very talented girl with extremely good memory and the ability to learn very quickly.",
+    "created_at": "2021-06-22T08:35:19.127Z",
+    "rating": 5,
+    "user": 65,
+    "owner": 66
+  }
+}
+]
